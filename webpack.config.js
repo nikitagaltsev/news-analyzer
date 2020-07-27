@@ -7,7 +7,7 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: './src/scripts/index.js',
+  entry: './src/index.js',
   output: {
     path: path.resolve(__dirname, 'dist'),
     filename: '[name].[chunkhash].js'
@@ -15,7 +15,7 @@ module.exports = {
   module: {
     rules: [{
       test: /\.js$/,
-      use: { 
+      use: {
         loader: "babel-loader",
         options: {
           presets: ['@babel/env'],
@@ -24,7 +24,7 @@ module.exports = {
         exclude: /node_modules/
       },
       {
-        test: /\.css$/i, 
+        test: /\.css$/i,
         use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
         {
           loader: 'css-loader',
@@ -52,13 +52,13 @@ module.exports = {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      inject: false, 
-      template: './src/index.html', 
+      inject: false,
+      template: './src/index.html',
       filename: 'index.html'
     }),
     require('autoprefixer'),
       require('cssnano')({
-        preset: 'default', 
+        preset: 'default',
     }),
     new MiniCssExtractPlugin({
       filename: 'style.[contenthash].css'
