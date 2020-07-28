@@ -1,0 +1,7 @@
+@import url('__input/search-hub__input.css');
+@import url('__button/search-hub__button.css');
+
+.search-hub {
+  position: relative;
+  margin-bottom: 80px;
+}

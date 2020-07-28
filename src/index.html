@@ -10,51 +10,49 @@
 </head>
 
 <body>
-
 <div class="page">
-
-  <header class="header">
-    <div class="header__container">
-      <img class="header__logo" src="../src/images/NewsAnalyzer.png" alt="Логотип Анализатора">
-      <div class="header__pages">
-        <a class="header__link" href="#">Главная</a>
-        <a class="header__link" href="#">О проекте</a>
+  <div class="background-container">
+    <header class="header">
+        <a class="logo" href="./index.html">NewsAnalyzer</a>
+        <div class="header__pages">
+          <a class="header__link" href="./index.html">Главная</a>
+          <a class="header__link" href="#">О проекте</a>
       </div>
-    </div>
-  </header>
+    </header>
 
-  <main class="content">
     <section class="search">
       <h1 class="search__title">Что в мире творится?</h1>
       <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
       <div class="search-hub">
-        <input class="search-hub__input">
+        <input class="search-hub__input" placeholder="Введите тему новости">
         <button class="search-hub__button">Искать</button>
       </div>
     </section>
+  </div>
 
-    <section class="about">
-      <div class="about__avatar-wrapper">
-        <img class="about__avatar">
-      </div>
-      <div class="about__text">
-        <h2 class="about__title">Об авторе</h2>
-        <p class="about__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
-        Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
-      </div>
-    </section>
-  </main>
+  <section class="author">
+    <img class="author__avatar" src="<%=require('./images/author.jpg').default%>" alt="">
+    <div class="author__text">
+      <h2 class="author__title">Об авторе</h2>
+      <p class="author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
+      Также можно рассказать о процессе обучения в Практикуме, чему вы тут научились, и чем можете помочь потенциальным заказчикам.</p>
+    </div>
+  </section>
 
   <footer class="footer">
     <p class="footer__copyright">© 2020  Supersite</p>
     <ul class="footer__links">
-      <li class="footer__link">Главная</li>
-      <li class="footer__link">О проекте</li>
-      <li class="footer__link">Яндекс.Практикум</li>
+      <li class="footer__links-item"><a class="footer__link" href="./index.html">Главная</a></li>
+      <li class="footer__links-item"><a class="footer__link" href="#">О проекте</a></li>
+      <li class="footer__links-item"><a class="footer__link" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a></li>
     </ul>
     <ul class="footer__social-icons">
-      <li class="footer__social-icon"></li>
-      <li class="footer__social-icon"></li>
+      <li class="footer__social-icons-item">
+        <a class="footer__link" href="#"></a>
+      </li>
+      <li class="footer__social-icons-item">
+        <a class="footer__link" href="#"></a>
+      </li>
     </ul>
   </footer>
 

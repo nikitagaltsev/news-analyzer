@@ -1,0 +1,25 @@
+.search-hub__button {
+  height: 100%;
+  width: 168px;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background: #2F71E5;
+  box-shadow: 0px 5px 15px rgba(14, 26, 57, 0.2);
+  border-radius: 100px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #fff;
+}
+
+.search-hub__button:hover {
+  background: #347EFF;
+  cursor: pointer;
+}
+
+.search-hub__button:active {
+  background: #2A65CC;
+}

@@ -1,3 +1,10 @@
-.header__link {
-  color: red !important;
+@import url('__pages/header__pages.css');
+@import url('_active/header__link_active.css');
+
+.header {
+  max-width: 1235px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto 78px;
+  padding: 30px 0 26px;
 }

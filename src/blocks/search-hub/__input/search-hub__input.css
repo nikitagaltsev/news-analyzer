@@ -1,0 +1,13 @@
+.search-hub__input {
+  width: 100%;
+  height: 64px;
+  padding-left: 24px;
+  background: #fff;
+  border: 1px solid #D1D2D6;
+  box-sizing: border-box;
+  border-radius: 100px;
+  font-family: Roboto;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+}
