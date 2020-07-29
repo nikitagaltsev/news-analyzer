@@ -1,1 +1,7 @@
 @import url('__social-icons-item/footer__social-icons-item.css');
+
+
+.footer__social-icons {
+  display: flex;
+  list-style: none;
+}

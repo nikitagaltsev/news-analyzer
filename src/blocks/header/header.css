@@ -1,4 +1,4 @@
-@import url('__pages/header__pages.css');
+@import url('../pages/pages.css');
 @import url('_active/header__link_active.css');
 
 .header {

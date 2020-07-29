@@ -1,0 +1,11 @@
+@import url('__title/search-result__title.css');
+@import url('__text/search-result__text.css');
+@import url('__in-progress/search-result__in-progress.css');
+@import url('../preloader/preloader.css');
+@import url('../no-result/no-result.css');
+
+
+.search-result {
+  background-color: #F5F6F7;
+  margin: 0 auto;
+}
