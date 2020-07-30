@@ -1,0 +1,6 @@
+.no-result {
+  margin: 80px auto 24px;
+  background-image: url('../../images/not-found.png');
+  width: 96px;
+  height: 96px;
+}
