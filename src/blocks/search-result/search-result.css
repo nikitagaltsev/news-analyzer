@@ -4,6 +4,9 @@
 @import url(__no-result/search-result__no-result.css);
 @import url('../preloader/preloader.css');
 @import url('../no-result/no-result.css');
+@import url('__done/search-result__done.css');
+@import url('_done/search-result__title_done.css');
+@import url('__show-more/search-result__show-more.css');
 
 .search-result {
   background-color: #F5F6F7;

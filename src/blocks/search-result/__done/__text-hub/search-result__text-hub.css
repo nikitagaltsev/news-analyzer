@@ -1,0 +1,11 @@
+@import url('__analytics/search-result__analytics.css');
+
+.search-result__text-hub {
+  max-width: 1206px;
+  text-align: end;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 60px;
+}

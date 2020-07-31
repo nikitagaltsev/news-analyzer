@@ -1,0 +1,10 @@
+@import url('__card/news__card.css');
+
+.news {
+  margin: 0 auto 55px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(282px,400px));
+  grid-template-rows: minmax(1fr, 2fr);
+  grid-gap: 16px;
+}

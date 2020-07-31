@@ -1,0 +1,14 @@
+@import url('__image/news__image.css');
+@import url('__date/news__date.css');
+@import url('__title/news__title.css');
+@import url('__text/news__text.css');
+@import url('__source/news__source.css');
+
+.news__card {
+  background: #FFFFFF;
+  border-radius: 16px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}

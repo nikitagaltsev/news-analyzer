@@ -1,6 +1,6 @@
-/* section, header, footer, main, div, a, p, img, h1, h2, h3, h4 {
+section, div, a, p, img, h1, h2, h3, h4 {
   border: 1px solid tomato;
-} */
+}
 
 @import url('./vendor/normalize.css');
 @import url('./fonts/fonts.css');
@@ -14,3 +14,4 @@
 @import url('./blocks/author/author.css');
 @import url('./blocks/footer/footer.css');
 @import url('./blocks/search-result/search-result.css');
+@import url('./blocks/news/news.css');

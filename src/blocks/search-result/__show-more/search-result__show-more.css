@@ -1,0 +1,20 @@
+.search-result__show-more {
+  display: block;
+  margin: 0 auto;
+  width: 288px;
+  height: 64px;
+  background: #fff;
+  border-radius: 80px;
+  border: none;
+  outline: none;
+  font-family: Roboto;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
+
+.search-result__show-more:hover {
+  opacity: 0.9;
+  cursor: pointer;
+}

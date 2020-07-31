@@ -8,3 +8,9 @@
   margin-left: 34px;
   text-decoration: none;
 }
+
+
+.pages__link:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}
