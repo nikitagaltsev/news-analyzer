@@ -1,4 +1,4 @@
-.search-result__analytics {
+.text-hub__link {
   font-family: Roboto;
   font-weight: 700;
   font-size: 18px;
@@ -6,3 +6,7 @@
   text-decoration: none;
 }
 
+.text-hub__link:hover {
+  opacity: 0.8;
+  transition: 0.3s;
+}

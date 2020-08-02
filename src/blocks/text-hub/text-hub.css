@@ -1,6 +1,7 @@
-@import url('__analytics/search-result__analytics.css');
+@import url('__title/text-hub__title.css');
+@import url('__link/text-hub__link.css');
 
-.search-result__text-hub {
+.text-hub {
   max-width: 1206px;
   text-align: end;
   margin: 0 auto 60px;

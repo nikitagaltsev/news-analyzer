@@ -1,6 +1,7 @@
 @import url('../pages/pages.css');
 @import url('_active/pages__link_active.css');
 @import url('header__container.css');
+@import url('_theme-dark/header_theme-dark.css');
 
 .header {
   margin-bottom: 78px;

@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News Analyzer</title>
-  <link rel="icon" href="../src/images/favicon.ico" type="image/x-icon"></link>
+  <link rel="icon" href="<%=require('../src/images/favicon.ico').default%>" type="image/x-icon"></link>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 
@@ -17,7 +17,7 @@
         <a class="logo" href="./index.html">NewsAnalyzer</a>
         <nav class="pages">
           <a class="pages__link pages__link_active" href="./index.html">Главная</a>
-          <a class="pages__link" href="#">О проекте</a>
+          <a class="pages__link" href="./about.html">О проекте</a>
         </nav>
       </div>
     </header>
@@ -45,9 +45,9 @@
     </div>
 
     <div class="search-result__done">
-      <div class="search-result__text-hub">
-        <h2 class="search-result__title search-result__title_done">Результаты поиска</h2>
-        <a class="search-result__analytics" href="#">Посмотреть аналитику ></a>
+      <div class="text-hub">
+        <h2 class="text-hub__title">Результаты поиска</h2>
+        <a class="text-hub__link" href="#">Посмотреть аналитику ></a>
       </div>
 
       <div class="news">

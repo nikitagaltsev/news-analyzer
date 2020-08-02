@@ -1,0 +1,7 @@
+.pages__link.pages__link_theme-dark {
+  color: #1A1B22;
+}
+
+.pages__link.pages__link_theme-dark.pages__link_active {
+  border-bottom: 3px solid #1A1B22;
+}

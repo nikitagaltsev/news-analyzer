@@ -7,10 +7,19 @@ const OptimizeCssAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const isDev = process.env.NODE_ENV === 'development';
 
 module.exports = {
-  entry: './src/index.js',
+  entry: {
+    main: './src/index.js',
+    about: './src/pages/about/index.js',
+    analytics: './src/pages/analytics/index.js'
+  },
   output: {
     path: path.resolve(__dirname, 'dist'),
-    filename: '[name].[chunkhash].js'
+    filename: './js/[name].[chunkhash].js'
+  },
+  resolve: {
+    alias: {
+      images: path.resolve(__dirname, 'src/images')
+    }
   },
   module: {
     rules: [{
@@ -25,6 +34,7 @@ module.exports = {
       },
       {
         test: /\.css$/i,
+        sideEffects: true,
         use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
         {
           loader: 'css-loader',
@@ -54,14 +64,27 @@ module.exports = {
     new HtmlWebpackPlugin({
       inject: false,
       template: './src/index.html',
-      filename: 'index.html'
+      filename: 'index.html',
+      chunks: ['main']
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/about/about.html',
+      filename: 'about.html',
+      chunks: ['about']
+    }),
+    new HtmlWebpackPlugin({
+      inject: false,
+      template: './src/pages/analytics/analytics.html',
+      filename: 'analytics.html',
+      chunks: ['analytics']
     }),
     require('autoprefixer'),
       require('cssnano')({
         preset: 'default',
     }),
     new MiniCssExtractPlugin({
-      filename: 'style.[contenthash].css'
+      filename: '[name].[contenthash].css'
     }),
     new OptimizeCssAssetsPlugin({
       assetNameRegExp: /\.css$/g,
@@ -75,5 +98,9 @@ module.exports = {
     new webpack.DefinePlugin({
       'NODE_ENV': JSON.stringify(process.env.NODE_ENV)
     })
-  ]
+  ],
+  devServer: {
+    contentBase: path.join(__dirname, 'dist'),
+    open: true,
+  }
 }

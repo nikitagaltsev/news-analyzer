@@ -1,0 +1,8 @@
+@import url('__title/client__title.css');
+@import url('__description/client__description.css');
+
+.client {
+  margin: 0 auto 90px;
+  max-width: 1235px;
+  text-align: left;
+}
