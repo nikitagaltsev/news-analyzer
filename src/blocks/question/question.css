@@ -1,0 +1,12 @@
+@import url('__menu/question__menu.css');
+@import url('__list/question__list.css');
+@import url('__item/question__item.css');
+@import url('__link/question__link.css');
+@import url('__title/question__title.css');
+@import url('__text/question__text.css');
+@import url('__span/question__span.css');
+
+.question {
+  max-width: 1235px;
+  margin: 0 auto 80px;
+}

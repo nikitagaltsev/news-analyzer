@@ -1,0 +1,21 @@
+@import url('_date/table__text_date.css');
+
+.table__text {
+  margin: 0 25px 0 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.4px;
+  text-transform: uppercase;
+  color: #B6BCBF;
+}
+
+.table__text:first-of-type {
+  max-width: 60px;
+}
+
+.table__text:last-of-type {
+  margin: 0;
+}

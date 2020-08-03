@@ -1,0 +1,17 @@
+@import url('__title/table__title.css');
+@import url('__info/table__info.css');
+@import url('__text/table__text.css');
+@import url('__container/table__container.css');
+@import url('__percents/table__percents.css');
+@import url('__percent/table__percent.css');
+@import url('__graph/table__graph.css');
+@import url('__days/table__days.css');
+@import url('__day/table__day.css');
+@import url('__progress-bar/table__progress-bar.css');
+@import url('__progress/table__progress.css');
+
+.table {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #F5F6F7;
+}

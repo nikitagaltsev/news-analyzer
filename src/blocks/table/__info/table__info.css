@@ -1,0 +1,5 @@
+.table__info {
+  max-width: 1235px;
+  margin: 0 auto 10px;
+  display: flex;
+}
