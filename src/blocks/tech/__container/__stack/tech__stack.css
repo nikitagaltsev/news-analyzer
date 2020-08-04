@@ -1,8 +1,8 @@
 @import url('__item/tech__item.css');
 
 .tech__stack {
-  margin-top: 90px;
+  margin-top: 80px;
   list-style: none;
   display: flex;
-  
+
 }

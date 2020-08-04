@@ -23,35 +23,66 @@ module.exports = {
   },
   module: {
     rules: [{
-      test: /\.js$/,
-      use: {
-        loader: "babel-loader",
-        options: {
-          presets: ['@babel/env'],
-          plugins: ['@babel/plugin-proposal-class-properties']
-        }},
+        test: /\.js$/,
+        use: {
+          loader: "babel-loader",
+          options: {
+            presets: ['@babel/env'],
+            plugins: ['@babel/plugin-proposal-class-properties']
+          }
+        },
         exclude: /node_modules/
       },
       {
         test: /\.css$/i,
         sideEffects: true,
-        use: [(isDev ? 'style-loader' : MiniCssExtractPlugin.loader),
-        {
-          loader: 'css-loader',
-          options: {
-            importLoaders: 2
-          }
-        },
-        'postcss-loader']
+        use: [
+          (isDev ? 'style-loader' : {
+            loader: MiniCssExtractPlugin.loader,
+            options: {
+              publicPath: '../'
+            }
+          }),
+          {
+            loader: 'css-loader',
+            options: {
+              importLoaders: 2
+            }
+          },
+          'postcss-loader'
+        ]
       },
       {
-        test: /\.(png|jpg|gif|ico|svg)$/i,
-        use: [
-          'file-loader?name=./images/[name].[ext]',
+        test: /\.(png|jpe?g|gif|ico|svg)$/i,
+        use: [{
+            loader: 'file-loader',
+            options: {
+              esModule: false,
+              name: 'assets/images/[contenthash].[ext]'
+            }
+          },
           {
             loader: 'image-webpack-loader',
-            options: {}
-          },
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 85
+              },
+              optipng: {
+                enabled: false
+              },
+              pngquant: {
+                quality: [0.85, 0.90],
+                speed: 4
+              },
+              gifsicle: {
+                interlaced: false
+              },
+              webp: {
+                quality: 75
+              }
+            }
+          }
         ]
       },
       {
@@ -80,8 +111,8 @@ module.exports = {
       chunks: ['analytics']
     }),
     require('autoprefixer'),
-      require('cssnano')({
-        preset: 'default',
+    require('cssnano')({
+      preset: 'default',
     }),
     new MiniCssExtractPlugin({
       filename: './css/[name].[contenthash].css'
@@ -90,7 +121,7 @@ module.exports = {
       assetNameRegExp: /\.css$/g,
       cssProcessor: require('cssnano'),
       cssProcessorPluginOptions: {
-              preset: ['default'],
+        preset: ['default'],
       },
       canPrint: true
     }),

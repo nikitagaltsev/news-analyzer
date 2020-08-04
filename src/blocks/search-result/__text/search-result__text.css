@@ -1,4 +1,6 @@
 .search-result__text {
+  max-width: 356px;
+  margin: 0 auto;
   font-family: Roboto;
   font-size: 18px;
   line-height: 24px;

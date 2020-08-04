@@ -2,9 +2,10 @@
 @import url('__social-icons/footer__social-icons.css');
 
 .footer {
-  max-width: 1120px;
+  max-width: 1235px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: baseline;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
 }
