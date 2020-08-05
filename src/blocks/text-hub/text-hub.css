@@ -11,3 +11,18 @@
   margin-bottom: 60px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1250px) {
+  .text-hub {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-hub {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 16px;
+    margin-bottom: 35px;
+  }
+}

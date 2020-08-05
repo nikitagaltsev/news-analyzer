@@ -2,3 +2,17 @@
   border-bottom: 3px solid #fff;
   padding-bottom: 23px;
 }
+
+
+@media (max-width: 1280px) {
+  .pages__link.pages__link_active {
+    padding-bottom: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .pages__link.pages__link_active {
+    padding-bottom: 16px;
+  }
+}

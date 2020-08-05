@@ -23,3 +23,12 @@
 .search-hub__button:active {
   background: #2A65CC;
 }
+
+
+@media (max-width: 600px) {
+  .search-hub__button {
+    position: static;
+    width: 288px;
+    height: 56px;
+  }
+}

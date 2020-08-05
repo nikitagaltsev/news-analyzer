@@ -9,3 +9,19 @@
   grid-gap: 16px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 1250px) {
+  .news {
+    padding: 0 40px;
+    grid-template-columns: repeat(3, minmax(224px,400px));
+    grid-gap: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .news {
+    grid-template-columns: minmax(288px,400px);
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+}

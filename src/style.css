@@ -1,6 +1,6 @@
-/* section, div, a, p, img, h1, h2, h3, h4 {
+section, footer, div, a, p, img, h1, h2, h3, h4 {
   border: 1px solid tomato;
-} */
+}
 
 @import url('./vendor/normalize.css');
 @import url('./fonts/fonts.css');

@@ -1,8 +1,17 @@
 .footer__copyright {
   font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
   font-size: 16px;
   line-height: 22px;
   color: #B6BCBF;
   margin-bottom: 21px;
   margin-top: 21px;
+}
+
+@media (max-width: 670px) {
+  .footer__copyright {
+    order: 3;
+    margin: 0;
+  }
 }

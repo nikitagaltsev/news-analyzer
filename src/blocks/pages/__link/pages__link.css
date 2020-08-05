@@ -16,3 +16,23 @@
   opacity: 0.8;
   transition: 0.3s;
 }
+
+@media (max-width: 830px) {
+  .pages__link,
+  .pages__link.pages__link_theme_dark {
+    margin-left: 20px;
+  }
+}
+
+@media (max-width: 670px) {
+  .pages__link.pages__link_theme_dark {
+    margin: 0 0 20px;
+  }
+}
+
+@media (max-width: 600px) {
+  .pages__link {
+    margin-left: 11px;
+    font-size: 16px;
+  }
+}

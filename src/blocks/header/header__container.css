@@ -6,3 +6,15 @@
   padding: 30px 0 26px;
 }
 
+@media (max-width: 1280px) {
+  .header__container {
+    padding-bottom: 18px;
+  }
+}
+
+
+@media (max-width: 600px) {
+  .header__container {
+    padding-bottom: 16px;
+  }
+}

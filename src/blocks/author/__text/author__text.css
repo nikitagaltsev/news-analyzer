@@ -5,3 +5,9 @@
 .author__text {
   max-width: 600px;
 }
+
+@media (max-width: 1000px) {
+  .author__text {
+    max-width: 424px;
+  }
+}

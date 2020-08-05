@@ -7,3 +7,10 @@
   align-items: center;
   color: #B6BCBF;
 }
+
+
+@media (max-width: 900px) {
+  .news__date {
+    margin-left: 16px;
+  }
+}

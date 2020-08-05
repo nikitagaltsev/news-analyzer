@@ -8,3 +8,16 @@
   padding-bottom: 80px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 800px) {
+  .search {
+    max-width: 452px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+   .search{
+    padding: 0 16px 32px;
+   }
+}

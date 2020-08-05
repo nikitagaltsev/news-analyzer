@@ -6,3 +6,24 @@
   display: flex;
   list-style: none;
 }
+
+@media (max-width: 830px) {
+  .footer__social-icons {
+    margin-left: 45px;
+    padding: 0;
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 745px) {
+  .footer__social-icons {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 670px) {
+  .footer__social-icons {
+    order: 2;
+    margin: 0 0 0 40px;
+  }
+}

@@ -2,3 +2,9 @@
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+@media (max-width: 600px) {
+  .search-result__in-progress {
+    padding: 40px 0;
+  }
+}

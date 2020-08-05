@@ -5,3 +5,13 @@
   line-height: 64px;
   color: #fff;
 }
+
+@media (max-width: 800px) {
+  .search__title {
+    margin-left: 0;
+    margin-bottom: 13px;
+    max-width: 385px;
+    font-size: 36px;
+    line-height: 40px;
+  }
+}

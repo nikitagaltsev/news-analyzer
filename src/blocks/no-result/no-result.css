@@ -5,3 +5,9 @@
   height: 96px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
+
+@media (max-width: 600px) {
+  .no-result {
+    margin-top: 20px;
+  }
+}
