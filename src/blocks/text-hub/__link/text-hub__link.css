@@ -12,3 +12,9 @@
   transition: 0.3s;
 }
 
+@media (max-width: 700px) {
+  .text-hub__link {
+    display: none;
+  }
+}
+

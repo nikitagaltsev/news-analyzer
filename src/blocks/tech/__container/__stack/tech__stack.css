@@ -4,5 +4,17 @@
   margin-top: 80px;
   list-style: none;
   display: flex;
+}
 
+@media (max-width: 1150px) {
+  .tech__stack {
+    margin: 0;
+  }
+}
+
+@media (max-width: 700px) {
+  .tech__stack {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }

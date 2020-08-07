@@ -1,14 +1,9 @@
 @import url('__link/pages__link.css');
 @import url('_theme_dark/pages__link_theme_dark.css');
+@import url('_footer/pages_footer.css');
 
 .pages {
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
-@media (max-width: 670px) {
-  .pages {
-    order: 1;
-    display: flex;
-    flex-direction: column;
-  }
-}
+

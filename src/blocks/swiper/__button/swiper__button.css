@@ -20,4 +20,10 @@
   display: none;
 }
 
+@media (max-width: 900px) {
+  .swiper__button.swiper-button-prev,
+  .swiper__button.swiper-button-next {
+    display: none;
+  }
+}
 

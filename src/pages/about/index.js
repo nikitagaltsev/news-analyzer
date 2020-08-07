@@ -8,12 +8,26 @@ Swiper.use([Navigation, Pagination]);
 const swiper = new Swiper('.swiper', {
   slideClass: 'swiper__slide',
   wrapperClass: 'swiper__wrapper',
-  slidesPerView: 3,
-  slidesPerGroup: 3,
-  spaceBetween: 16,
-  // centeredSlides: true,
-  // loop: true,
-  // loopedSlides: 3,
+
+  breakpoints: {
+    900: {
+      slidesPerView: 3,
+      slidesPerGroup: 3,
+      spaceBetween: 16,
+    },
+
+    600: {
+      slidesPerView: 2,
+      slidesPerGroup: 2,
+      spaceBetween: 8,
+    },
+
+    100: {
+      slidesPerView: 1,
+      slidesPerGroup: 1,
+      spaceBetween: 8
+    }
+  },
 
   pagination: {
     el: '.swiper__pagination',
@@ -26,6 +40,8 @@ const swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
-  }
+  },
+
+
 });
 

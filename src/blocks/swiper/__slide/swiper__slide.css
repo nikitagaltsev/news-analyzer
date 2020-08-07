@@ -1,5 +1,5 @@
 .swiper__slide {
-  max-width: 400px;
+  width: 400px;
   margin-top: 5px;
   margin-bottom: 48px;
   height: 288px;
@@ -14,4 +14,17 @@
 .swiper__slide:hover {
   transition: 0.3s;
   box-shadow: 0px 0px 8px 0px rgba(150,150,150,0.75);
+}
+
+@media (max-width: 900px) {
+  .swiper__slide {
+    max-width: 336px;
+  }
+}
+
+
+@media (max-width: 500px) {
+  .swiper__slide {
+    max-width: 288px;
+  }
 }

@@ -15,8 +15,18 @@
   }
 }
 
+@media (max-width: 700px) {
+  .text-hub__title {
+    max-width: 288px;
+    text-align: left;
+  }
+}
+
+
 @media (max-width: 650px) {
   .text-hub__title {
     margin-bottom: 15px;
+    font-size: 30px;
+    line-height: 40px;
   }
 }

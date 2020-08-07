@@ -42,3 +42,11 @@
 }
 
 
+@media (max-width: 900px) {
+  .swiper::before,
+  .swiper::after {
+    background: none;
+  }
+}
+
+
