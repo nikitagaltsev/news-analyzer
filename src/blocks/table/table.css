@@ -11,8 +11,14 @@
 @import url('__progress/table__progress.css');
 
 .table {
-  padding-top: 80px;
-  padding-bottom: 80px;
+  padding: 80px 40px 80px;
   background-color: #F5F6F7;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .table {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
 }

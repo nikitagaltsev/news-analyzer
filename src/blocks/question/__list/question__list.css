@@ -4,3 +4,9 @@
   list-style: none;
   display: flex;
 }
+
+@media (max-width: 800px) {
+  .question__list {
+    margin-bottom: 64px;
+  }
+}

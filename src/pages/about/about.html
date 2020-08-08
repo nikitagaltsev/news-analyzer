@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News Analyzer</title>
-  <link rel="icon" href="<%=require('../../images/favicon.ico').default%>" type="image/x-icon"></link>
+  <link rel="icon" href="<%=require('../../images/favicon.ico')%>" type="image/x-icon"></link>
   <link rel="stylesheet" href="<%= htmlWebpackPlugin.files.css %>">
 </head>
 <body>
@@ -36,26 +36,41 @@
         <ul class="tech__stack">
           <li class="tech__item">
             <h3 class="tech__name">HTML</h3>
-            <img class="tech__image" src="<%=require('../../images/html.png')%>" alt="Иконка HTML">
+            <picture class="tech__picture">
+              <source srcset="<%=require('../../images/html.png')%>">
+              <img class="tech__image" src="<%=require('../../images/html.png')%>" alt="Иконка HTML">
+            </picture>
           </li>
           <li class="tech__item">
             <h3 class="tech__name">CSS</h3>
-            <img class="tech__image" src="<%=require('../../images/css.png')%>" alt="Иконка CSS">
+            <picture class="tech__picture">
+              <source srcset="<%=require('../../images/css.png')%>">
+              <img class="tech__image" src="<%=require('../../images/css.png')%>" alt="Иконка CSS">
+            </picture>
           </li>
           <li class="tech__item">
             <h3 class="tech__name">JavaScript</h3>
-            <img class="tech__image" src="<%=require('../../images/javascript.png')%>" alt="Иконка JavaScript">
+            <picture class="tech__picture">
+              <source srcset="<%=require('../../images/javascript.png')%>">
+              <img class="tech__image" src="<%=require('../../images/javascript.png')%>" alt="Иконка JavaScript">
+            </picture>
           </li>
           <li class="tech__item">
             <h3 class="tech__name">Webpack</h3>
-            <img class="tech__image" src="<%=require('../../images/webpack.png')%>" alt="Иконка Webpack">
+            <picture class="tech__picture">
+              <source srcset="<%=require('../../images/webpack.png')%>">
+              <img class="tech__image" src="<%=require('../../images/webpack.png')%>" alt="Иконка Webpack">
+            </picture>
           </li>
         </ul>
       </div>
     </section>
 
     <section class="author">
-      <img class="author__avatar" src="<%=require('../../images/author.jpg')%>" alt="Аватар автора">
+      <picture class="author__picture">
+        <source srcset="<%=require('../../images/author.jpg')%>">
+        <img class="author__avatar" src="<%=require('../../images/author.jpg')%>" alt="Аватар автора">
+      </picture>
       <div class="author__text">
         <h2 class="author__title">Об авторе</h2>
         <p class="author__paragraph">Это блок с описанием автора проекта. Здесь следует указать, как вас зовут, чем вы занимаетесь, какими технологиями разработки владеете.
@@ -66,16 +81,19 @@
     <section class="history">
       <div class="text-hub">
         <h2 class="text-hub__title">История коммитов из GitHub</h2>
-        <a class="text-hub__link" href="#">Открыть в  Github ></a>
+        <a class="text-hub__link" href="https://github.com/" target="_blank">Открыть в  Github ></a>
       </div>
 
       <div class="swiper">
         <ul class="swiper__wrapper">
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Антон Долинин</h3>
                   <p class="swiper__email">anton@yandex.ru</p>
@@ -88,10 +106,13 @@
           </li>
 
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar.jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Мария Фёдорова</h3>
                   <p class="swiper__email">mariiifed@yandex.ru</p>
@@ -106,10 +127,13 @@
           </li>
 
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Антон Долинин</h3>
                   <p class="swiper__email">anton@yandex.ru</p>
@@ -122,10 +146,13 @@
           </li>
 
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar.jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Мария Фёдорова</h3>
                   <p class="swiper__email">mariiifed@yandex.ru</p>
@@ -140,10 +167,13 @@
           </li>
 
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Антон Долинин</h3>
                   <p class="swiper__email">anton@yandex.ru</p>
@@ -156,10 +186,13 @@
           </li>
 
           <li class="swiper__slide">
-            <a href="" class="swiper__link">
+            <a href="https://github.com/" target="_blank" class="swiper__link">
               <p class="swiper__date">14 августа, 2019</p>
               <div class="swiper__author-info">
-                <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                <picture class="swiper__picture">
+                  <source srcset="<%=require('../../images/avatar.jpg')%>">
+                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
+                </picture>
                 <div class="swiper__title-container">
                   <h3 class="swiper__title">Мария Фёдорова</h3>
                   <p class="swiper__email">mariiifed@yandex.ru</p>
@@ -181,19 +214,21 @@
 
     </div>
 
-    <a class="history__link" href="https://github.com/nikitagaltsev" target="_blank">
-      <button class="history__button">Открыть в  Github</button>
-    </a>
+    <button class="history__button">
+      <a class="history__link" href="https://github.com/nikitagaltsev" target="_blank">
+        Открыть в  Github
+      </a>
+    </button>
 
     </section>
   </main>
 
   <footer class="footer">
     <p class="footer__copyright">© 2020 Nikita Galtsev</p>
-    <nav class="pages">
+    <nav class="pages pages_footer">
       <a class="pages__link pages__link_theme_dark" href="./index.html">Главная</a>
       <a class="pages__link pages__link_theme_dark" href="./about.html">О проекте</a>
-      <a class="pages__link pages__link_theme_dark" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+      <a class="pages__link pages__link_theme_dark" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
     </nav>
     <ul class="footer__social-icons">
       <li class="footer__social-icons-item">

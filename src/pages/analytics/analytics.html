@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>News Analyzer</title>
-  <link rel="icon" href="../src/images/favicon.ico" type="image/x-icon"></link>
+  <link rel="icon" href="<%=require('../../images/favicon.ico')%>" type="image/x-icon"></link>
   <link rel="stylesheet" href="<%=htmlWebpackPlugin.files.css %>">
 </head>
 <body>
@@ -26,10 +26,10 @@
       <nav class="question__menu">
         <ul class="question__list">
           <li class="question__item">
-            <a href="" class="question__link" href="./index.html">Главная&nbsp</a>
+            <a class="question__link" href="./index.html">Главная&nbsp;</a>
           </li>
           <li class="question__item">
-            <a href="" class="question__link question__link_current" href="#">/&nbspАналитика</a>
+            <a href="./analytics.html" class="question__link question__link_current">/&nbsp;Аналитика</a>
           </li>
         </ul>
       </nav>
@@ -90,10 +90,10 @@
 
   <footer class="footer">
     <p class="footer__copyright">© 2020 Nikita Galtsev</p>
-    <nav class="pages">
+    <nav class="pages pages_footer">
       <a class="pages__link pages__link_theme_dark" href="./index.html">Главная</a>
       <a class="pages__link pages__link_theme_dark" href="./about.html">О проекте</a>
-      <a class="pages__link pages__link_theme_dark" href="https://praktikum.yandex.ru/" target="_blank">Яндекс.Практикум</a>
+      <a class="pages__link pages__link_theme_dark" href="https://praktikum.yandex.ru/">Яндекс.Практикум</a>
     </nav>
     <ul class="footer__social-icons">
       <li class="footer__social-icons-item">

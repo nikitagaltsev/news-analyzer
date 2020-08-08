@@ -1,0 +1,5 @@
+@media (max-width: 500px) {
+  .question__menu {
+    display: none;
+  }
+}

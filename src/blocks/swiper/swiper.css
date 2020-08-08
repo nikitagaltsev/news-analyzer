@@ -14,8 +14,8 @@
 
 .swiper {
   overflow: hidden;
-  margin: 0 auto;
-  max-width: 100%;
+  margin: 0 auto 15px;
+  max-width: 1440px;
   position: relative;
   z-index: 1;
   font-family: Roboto, Arial, Helvetica, sans-serif;

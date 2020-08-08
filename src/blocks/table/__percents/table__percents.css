@@ -8,3 +8,10 @@
   width: calc(100% - 112px);
   text-align: right;
 }
+
+
+@media (max-width: 600px) {
+  .table__percents {
+    display: none;
+  }
+}

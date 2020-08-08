@@ -1,5 +1,5 @@
-@import url('__link/history__link.css');
 @import url('__button/history__button.css');
+@import url('__link/history__link.css');
 
 .history {
   padding-top: 68px;

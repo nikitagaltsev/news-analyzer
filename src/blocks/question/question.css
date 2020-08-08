@@ -10,4 +10,18 @@
   max-width: 1235px;
   margin: 0 auto 80px;
   font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0 40px;
+}
+
+@media (max-width: 800px) {
+  .question {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .question {
+    padding: 0 16px;
+    margin-bottom: 22px;
+  }
 }
