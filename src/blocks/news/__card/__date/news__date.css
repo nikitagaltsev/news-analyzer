@@ -1,0 +1,16 @@
+.news__date {
+  margin: 0 0 9px 24px;
+  font-family: Source Sans Pro;
+  font-size: 18px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  color: #B6BCBF;
+}
+
+
+@media (max-width: 900px) {
+  .news__date {
+    margin-left: 16px;
+  }
+}

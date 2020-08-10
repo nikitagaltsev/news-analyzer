@@ -1,0 +1,17 @@
+.table__percents {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-self: flex-end;
+  align-items: flex-end;
+  width: calc(100% - 112px);
+  text-align: right;
+}
+
+
+@media (max-width: 600px) {
+  .table__percents {
+    display: none;
+  }
+}

@@ -1,0 +1,29 @@
+@import url('_prev/swiper__button_prev.css');
+
+.swiper__button {
+  border-radius: 50%;
+  background-color: #1a1b22;
+  background-image: url('../../../images/navigation.svg');
+  background-position: center;
+  background-repeat: no-repeat;
+  box-shadow: 0px 3px 10px rgba(14, 26, 57, 0.2);
+  z-index: 10;
+}
+
+.swiper__button.swiper-button-prev,
+.swiper__button.swiper-button-next {
+  height: 40px;
+  width: 40px;
+}
+
+.swiper__button::after {
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .swiper__button.swiper-button-prev,
+  .swiper__button.swiper-button-next {
+    display: none;
+  }
+}
+

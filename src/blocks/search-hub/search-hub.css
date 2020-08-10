@@ -1,0 +1,16 @@
+@import url('__input/search-hub__input.css');
+@import url('__button/search-hub__button.css');
+
+.search-hub {
+  position: relative;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 600px) {
+  .search-hub {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}

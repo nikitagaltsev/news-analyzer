@@ -1,0 +1,28 @@
+@import url('__title/text-hub__title.css');
+@import url('__link/text-hub__link.css');
+
+.text-hub {
+  max-width: 1206px;
+  text-align: end;
+  margin: 0 auto 60px;
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: 60px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1250px) {
+  .text-hub {
+    padding: 0 40px;
+  }
+}
+
+@media (max-width: 650px) {
+  .text-hub {
+    flex-direction: column;
+    text-align: left;
+    padding: 0 16px;
+    margin-bottom: 35px;
+  }
+}

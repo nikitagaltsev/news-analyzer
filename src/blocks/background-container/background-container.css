@@ -1,0 +1,13 @@
+.background-container {
+  background-image: url('../../images/search-background.jpg');
+  background-position: center;
+  background-size: cover;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+
+@media (max-width: 1280px) {
+  .background-container {
+
+  }
+}

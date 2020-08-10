@@ -1,0 +1,52 @@
+@import url('__wrapper/swiper__wrapper.css');
+@import url('__slide/swiper__slide.css');
+@import url('__link/swiper__link.css');
+@import url('__date/swiper__date.css');
+@import url('__author-info/swiper__author-info.css');
+@import url('__avatar/swiper__avatar.css');
+@import url('__title-container/swiper__title-container.css');
+@import url('__title/swiper__title.css');
+@import url('__email/swiper__email.css');
+@import url('__text/swiper__text.css');
+@import url('__code/swiper__code.css');
+@import url('__button/swiper__button.css');
+@import url('__bullet/swiper__bullet.css');
+
+.swiper {
+  overflow: hidden;
+  margin: 0 auto 15px;
+  max-width: 1440px;
+  position: relative;
+  z-index: 1;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.swiper::before,
+.swiper::after {
+  content: '';
+  width: 100px;
+  z-index: 1;
+  position: absolute;
+  height: 100%;
+  top: 0;
+}
+
+.swiper::before {
+  left: 0;
+  background: linear-gradient(to right, #f5f6f7 0%, rgba(255,255,255,0) 100%);
+}
+
+.swiper::after {
+  right: 0;
+  background: linear-gradient(to left, #f5f6f7 0%, rgba(255,255,255,0) 100%);
+}
+
+
+@media (max-width: 900px) {
+  .swiper::before,
+  .swiper::after {
+    background: none;
+  }
+}
+
+

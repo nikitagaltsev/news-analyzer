@@ -1,0 +1,9 @@
+.search-result__no-result {
+  padding-bottom: 80px;
+}
+
+@media (max-width: 600px) {
+  .search-result__no-result {
+    padding: 40px 0;
+  }
+}

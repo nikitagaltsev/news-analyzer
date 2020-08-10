@@ -1,0 +1,23 @@
+@import url('__title/search__title.css');
+@import url('__subtitle/search__subtitle.css');
+
+.search {
+  max-width: 608px;
+  align-items: center;
+  margin: 0 auto;
+  padding-bottom: 80px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 800px) {
+  .search {
+    max-width: 452px;
+    padding-bottom: 48px;
+  }
+}
+
+@media (max-width: 500px) {
+   .search{
+    padding: 0 16px 32px;
+   }
+}

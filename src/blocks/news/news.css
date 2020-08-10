@@ -1,0 +1,27 @@
+@import url('__card/news__card.css');
+
+.news {
+  margin: 0 auto 55px;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(3, minmax(282px,400px));
+  grid-template-rows: minmax(1fr, 2fr);
+  grid-gap: 16px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 1250px) {
+  .news {
+    padding: 0 40px;
+    grid-template-columns: repeat(3, minmax(224px,400px));
+    grid-gap: 8px;
+  }
+}
+
+@media (max-width: 700px) {
+  .news {
+    grid-template-columns: minmax(288px,400px);
+    padding: 0 16px;
+    margin-bottom: 16px;
+  }
+}

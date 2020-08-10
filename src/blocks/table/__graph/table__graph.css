@@ -1,0 +1,5 @@
+.table__graph {
+  display: grid;
+  max-width: 1235px;
+  grid-template-columns: 110px 1fr;
+}

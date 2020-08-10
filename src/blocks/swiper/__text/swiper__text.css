@@ -1,0 +1,16 @@
+.swiper__text {
+  margin: 0 0 0 24px;
+  max-width: 352px;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 22px;
+  color: #1A1B22;
+}
+
+@media (max-width: 900px) {
+ .swiper__text {
+   max-width: 296px;
+ }
+}

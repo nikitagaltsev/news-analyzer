@@ -1,0 +1,14 @@
+.client__description {
+  max-width: 815px;
+  margin: 0 auto 25px 0;
+  font-family: Roboto;
+  font-size: 18px;
+  line-height: 24px;
+  color: #1A1B22;
+}
+
+@media (max-width: 800px) {
+  .client__description {
+    margin-bottom: 8px;
+  }
+}

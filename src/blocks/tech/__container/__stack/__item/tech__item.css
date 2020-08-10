@@ -1,0 +1,14 @@
+@import url('__name/tech__name.css');
+@import url('__image/tech__image.css');
+
+
+.tech__item {
+  text-align: center;
+  margin-right: 70px;
+}
+
+@media (max-width: 700px) {
+  .tech__item {
+    margin-right: 40px;
+  }
+}

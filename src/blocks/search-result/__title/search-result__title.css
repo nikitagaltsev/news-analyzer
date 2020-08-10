@@ -1,0 +1,8 @@
+.search-result__title {
+  margin: 0 auto 14px;
+  font-family: Roboto Slab;
+  font-size: 26px;
+  line-height: 30px;
+  text-align: center;
+  color: #1A1B22;
+}

@@ -1,0 +1,13 @@
+@import url('__title/author__title.css');
+@import url('__paragraph/author__paragraph.css');
+
+
+.author__text {
+  max-width: 600px;
+}
+
+@media (max-width: 1000px) {
+  .author__text {
+    max-width: 424px;
+  }
+}

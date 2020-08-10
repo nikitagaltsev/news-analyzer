@@ -1,0 +1,7 @@
+@import url('__container/tech__container.css');
+
+.tech {
+  background: #F5F6F7;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding: 0 40px;
+}

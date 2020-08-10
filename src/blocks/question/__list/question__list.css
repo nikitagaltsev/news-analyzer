@@ -1,0 +1,12 @@
+.question__list {
+  margin: 0 auto 76px 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+@media (max-width: 800px) {
+  .question__list {
+    margin-bottom: 64px;
+  }
+}
