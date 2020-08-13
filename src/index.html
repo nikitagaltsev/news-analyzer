@@ -33,7 +33,7 @@
   </div>
 
   <section class="search-result">
-    <div class="search-result__in-progress">
+    <!-- <div class="search-result__in-progress">
       <div class="preloader"></div>
       <p class="search-result__text">Идет поиск новостей...</p>
     </div>
@@ -42,7 +42,7 @@
       <div class="no-result"></div>
       <h2 class="search-result__title">Ничего не найдено</h2>
       <p class="search-result__text">К сожалению по вашему запросу ничего не найдено.</p>
-    </div>
+    </div> -->
 
     <div class="search-result__done">
       <div class="text-hub">
@@ -51,72 +51,20 @@
       </div>
 
       <div class="news">
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_01.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_01.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Национальное достояние – парки</h3>
-          <p class="news__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p class="news__source">Лента.ру</p>
-        </a>
+        <template id="card-template">
 
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_02.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_02.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="news__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-          <p class="news__source">Медуза</p>
-        </a>
+          <a class="news__card" target="_blank">
+            <picture class="news__picture">
+              <source srcset="">
+              <img class="news__image" src="" alt="Превью картинка новости">
+            </picture>
+            <p class="news__date"></p>
+            <h3 class="news__title"></h3>
+            <p class="news__text"></p>
+            <p class="news__source"></p>
+          </a>
 
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_01.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_01.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Национальное достояние – парки</h3>
-          <p class="news__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p class="news__source">Лента.ру</p>
-        </a>
-
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_02.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_02.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="news__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-          <p class="news__source">Медуза</p>
-        </a>
-
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_01.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_01.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Национальное достояние – парки</h3>
-          <p class="news__text">В 2016 году Америка отмечала важный юбилей: сто лет назад здесь начала складываться система национальных парков – охраняемых территорий, где и сегодня каждый может приобщиться к природе.</p>
-          <p class="news__source">Лента.ру</p>
-        </a>
-
-        <a class="news__card" href="https://praktikum.yandex.ru/" target="_blank">
-          <picture class="news__picture">
-            <source srcset="<%=require('./images/news_02.jpg')%>">
-            <img class="news__image" src="<%=require('./images/news_02.jpg')%>" alt="Превью картинка новости">
-          </picture>
-          <p class="news__date">2 августа, 2019</p>
-          <h3 class="news__title">Лесные огоньки: история одной фотографии</h3>
-          <p class="news__text">Фотограф отвлеклась от освещения суровой политической реальности Мексики, чтобы запечатлеть ускользающую красоту одного из местных чудес природы.</p>
-          <p class="news__source">Медуза</p>
-        </a>
-
+        </template>
       </div>
 
       <button class="search-result__show-more" type="button">Показать еще</button>
