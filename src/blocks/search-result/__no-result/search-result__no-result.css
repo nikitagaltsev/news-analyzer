@@ -1,5 +1,6 @@
 .search-result__no-result {
   padding-bottom: 80px;
+  display: none;
 }
 
 @media (max-width: 600px) {

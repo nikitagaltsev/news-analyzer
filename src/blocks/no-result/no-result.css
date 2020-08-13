@@ -1,13 +1,14 @@
+@import url('__block/no-result__block.css');
+@import url('__title/no-result__title.css');
+@import url('__text/no-result__text.css');
+
 .no-result {
-  margin: 80px auto 24px;
-  background-image: url('../../images/not-found.png');
-  width: 96px;
-  height: 96px;
-  font-family: Roboto, Arial, Helvetica, sans-serif;
+  padding-bottom: 80px;
+  display: none;
 }
 
 @media (max-width: 600px) {
   .no-result {
-    margin-top: 20px;
+    padding: 40px 0;
   }
 }

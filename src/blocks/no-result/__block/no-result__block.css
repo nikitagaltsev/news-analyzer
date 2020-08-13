@@ -1,0 +1,13 @@
+.no-result__block {
+  margin: 80px auto 24px;
+  background-image: url('../../../images/not-found.png');
+  width: 96px;
+  height: 96px;
+  font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+@media (max-width: 600px) {
+  .no-result__block {
+    margin-top: 20px;
+  }
+}
