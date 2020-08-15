@@ -7,6 +7,7 @@ import NewsCard from './js/components/NewsCard';
 import NewsCardList from './js/components/NewsCardList';
 import SearchInput from './js/components/SearchInput';
 import SearchState from './js/components/SearchState';
+import Dates from './js/components/Dates';
 import newsApi from './js/constants/news-api';
 import createCard from './js/utils/create-card';
 
@@ -22,14 +23,21 @@ import createCard from './js/utils/create-card';
   const dataStorage = new DataStorage(localStorage);
   const newsCardList = new NewsCardList(newsContainer);
   const searchInput = new SearchInput(doSearch, form, input);
+  const dates = new Dates();
 
   const inProgress = new SearchState(document.querySelector('.in-progress'));
   const noResult = new SearchState(document.querySelector('.no-result'));
   const resultDone = new SearchState(document.querySelector('.search-result'));
 
+
   const pages = {
     from: 3,
     to: 6
+  }
+
+  if (dataStorage.getNews().length > 0) {
+    createCard(0, 3, dataStorage, NewsCard, cardTemplate, newsCardList);
+    resultDone.setActive();
   }
 
   //работаем с формой
@@ -52,16 +60,18 @@ import createCard from './js/utils/create-card';
     }
   })
 
+  // Валидация инпута
+  input.addEventListener('input', searchInput.checkInputValidity);
+
 
   //запуск поиска
    function doSearch() {
     inProgress.setActive();
-    newsApi.getNews(input.value)
+    newsApi.getNews(input.value, dates.oneWeekAgoDate(), dates.currentDate())
     .then(res => {
       if (res.status === 'ok') {
         const articles = JSON.stringify(res.articles);
         dataStorage.setData(articles);
-        console.log(res.articles.length)
       }
 
       if (res.articles.length == 0) {

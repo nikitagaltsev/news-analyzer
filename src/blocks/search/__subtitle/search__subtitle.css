@@ -16,6 +16,12 @@
   }
 }
 
+@media (max-width: 600px) {
+  .search__subtitle {
+    margin-bottom: 35px;
+  }
+}
+
 @media (max-width: 500px) {
   .search__subtitle {
     font-size: 20px;

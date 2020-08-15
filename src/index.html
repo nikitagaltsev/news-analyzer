@@ -25,9 +25,10 @@
     <section class="search">
       <h1 class="search__title">Что в мире творится?</h1>
       <p class="search__subtitle">Введите в поиске любую тему и узнайте, насколько популярной она была в новостях за прошедшую неделю.</p>
-      <form class="search-hub">
-        <input class="search-hub__input" placeholder="Введите тему новости" required>
+      <form class="search-hub" novalidate>
+        <input class="search-hub__input" minlength="2" maxlength="15" placeholder="Введите тему новости" required>
         <button class="search-hub__button">Искать</button>
+        <span class="error-message"></span>
       </form>
     </section>
   </div>
