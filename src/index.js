@@ -35,6 +35,12 @@ import createCard from './js/utils/create-card';
     to: 6
   }
 
+  //логика активных страниц
+  if (document.location.pathname === '/index.html') {
+    document.querySelector('.pages__link_main').classList.add('pages__link_active')
+  }
+
+  //инициализация нововстей, если они есть в сторе
   if (dataStorage.getNews().length > 0) {
     createCard(0, 3, dataStorage, NewsCard, cardTemplate, newsCardList);
     resultDone.setActive();
@@ -71,7 +77,7 @@ import createCard from './js/utils/create-card';
     .then(res => {
       if (res.status === 'ok') {
         const articles = JSON.stringify(res.articles);
-        dataStorage.setData(articles);
+        dataStorage.setNews(articles);
       }
 
       if (res.articles.length == 0) {

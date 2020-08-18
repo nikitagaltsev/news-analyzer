@@ -14,6 +14,8 @@ export default class NewsApi {
       headers: {
         authorization: this.headers.authorization
       }
-    }).then(res => res.json());
+    })
+    .then(res => res.json())
+    .catch(err => {});
   }
 }

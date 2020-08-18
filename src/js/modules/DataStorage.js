@@ -5,12 +5,20 @@ export default class DataStorage {
     this._local = localStorage;
   }
 
-  setData(data) {
+  setNews(data) {
     this._local.setItem('news', data);
+  }
+
+  setCommits(data) {
+    this._local.setItem('commits', data);
   }
 
   getNews() {
     return JSON.parse(this._local.getItem('news'));
+  }
+
+  getCommits() {
+    return JSON.parse(this._local.getItem('commits'));
   }
 
   resetStore() {

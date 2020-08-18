@@ -14,8 +14,8 @@
     <div class="header__container">
       <a class="logo logo_theme-dark" href="./index.html">NewsAnalyzer</a>
       <nav class="pages">
-        <a class="pages__link pages__link_theme-dark pages__link_active" href="./index.html">Главная</a>
-        <a class="pages__link pages__link_theme-dark" href="./about.html">О проекте</a>
+        <a class="pages__link pages__link_main pages__link_theme-dark pages__link_active" href="./index.html">Главная</a>
+        <a class="pages__link pages__link_about pages__link_theme-dark" href="./about.html">О проекте</a>
       </nav>
     </div>
   </header>
@@ -86,125 +86,29 @@
 
       <div class="swiper">
         <ul class="swiper__wrapper">
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Антон Долинин</h3>
-                  <p class="swiper__email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="swiper__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </a>
-          </li>
 
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar.jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Мария Фёдорова</h3>
-                  <p class="swiper__email">mariiifed@yandex.ru</p>
-                </div>
-              </div>
-              <p class="swiper__text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open
-                <code class="swiper__code">Tools > Plugins > Available plugins</code>
-                and find and install Emmet plugin.
-              </p>
-            </a>
-          </li>
+          <template id="commit-template" style="display: none;">
 
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Антон Долинин</h3>
-                  <p class="swiper__email">anton@yandex.ru</p>
+            <li class="swiper__slide">
+              <a href="https://github.com/" target="_blank" class="swiper__link">
+                <p class="swiper__date"></p>
+                <div class="swiper__author-info">
+                  <picture class="swiper__picture">
+                    <source srcset="">
+                    <img class="swiper__avatar" src="" alt="Аватар пользователя на GitHub">
+                  </picture>
+                  <div class="swiper__title-container">
+                    <h3 class="swiper__title"></h3>
+                    <p class="swiper__email"></p>
+                  </div>
                 </div>
-              </div>
-              <p class="swiper__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </a>
-          </li>
+                <p class="swiper__text">
+                </p>
+              </a>
+            </li>
 
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar.jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Мария Фёдорова</h3>
-                  <p class="swiper__email">mariiifed@yandex.ru</p>
-                </div>
-              </div>
-              <p class="swiper__text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open
-                <code class="swiper__code">Tools > Plugins > Available plugins</code>
-                and find and install Emmet plugin.
-              </p>
-            </a>
-          </li>
+          </template>
 
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar(2).jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar(2).jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Антон Долинин</h3>
-                  <p class="swiper__email">anton@yandex.ru</p>
-                </div>
-              </div>
-              <p class="swiper__text">
-                Emmet (formerly Zen Coding) is a web-developer’s toolkit that can greatly improve your HTML & CSS workflow.
-              </p>
-            </a>
-          </li>
-
-          <li class="swiper__slide">
-            <a href="https://github.com/" target="_blank" class="swiper__link">
-              <p class="swiper__date">14 августа, 2019</p>
-              <div class="swiper__author-info">
-                <picture class="swiper__picture">
-                  <source srcset="<%=require('../../images/avatar.jpg')%>">
-                  <img class="swiper__avatar" src="<%=require('../../images/avatar.jpg')%>" alt="Аватар пользователя на GitHub">
-                </picture>
-                <div class="swiper__title-container">
-                  <h3 class="swiper__title">Мария Фёдорова</h3>
-                  <p class="swiper__email">mariiifed@yandex.ru</p>
-                </div>
-              </div>
-              <p class="swiper__text">
-                You can install this plugin directly from NetBeans Plugin Portal: in NetBeans, open
-                <code class="swiper__code">Tools > Plugins > Available plugins</code>
-                and find and install Emmet plugin.
-              </p>
-            </a>
-          </li>
         </ul>
 
         <div class="swiper__pagination"></div>
