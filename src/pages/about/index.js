@@ -11,10 +11,8 @@ import DataStorage from '../../js/modules/DataStorage'
 (function () {
   Swiper.use([Navigation, Pagination]);
 
-  if (document.location.pathname === '/about.html') {
-    document.querySelector('.pages__link_main').classList.remove('pages__link_active');
-    document.querySelector('.pages__link_about').classList.add('pages__link_active');
-  }
+  document.querySelector('.pages__link_main').classList.remove('pages__link_active');
+  document.querySelector('.pages__link_about').classList.add('pages__link_active');
 
   const commitTemplate = document.querySelector('#commit-template').content;
   const commitCardList = new CommitCardList(document.querySelector('.swiper__wrapper'));
@@ -72,6 +70,7 @@ import DataStorage from '../../js/modules/DataStorage'
     });
   })
   .catch(err => {
+    document.querySelector('.swiper__wrapper').style.display = 'none';
     console.log(err);
   })
 

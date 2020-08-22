@@ -37,9 +37,7 @@ import createCard from './js/utils/create-card';
   }
 
   //логика активных страниц
-  if (document.location.pathname === '/index.html') {
-    document.querySelector('.pages__link_main').classList.add('pages__link_active')
-  }
+  document.querySelector('.pages__link_main').classList.add('pages__link_active')
 
   //инициализация нововстей, если они есть в сторе
   if (dataStorage.getNews()!== null && dataStorage.getNews().length > 0) {
