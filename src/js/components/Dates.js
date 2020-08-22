@@ -11,12 +11,11 @@ export default class Dates {
   }
 
   currentDate() {
-
     return `${this._year}-${this._month}-${this._day}`;
   }
 
   oneWeekAgoDate() {
-    const _sevenDays = `0${this._day - 7}`;
+    const _sevenDays = this._day - 7;
     if (_sevenDays < 7 && this._month != '01') {
       this._month -= 1;
     } else if (this._day < 7 && this._month === '01') {
@@ -24,7 +23,7 @@ export default class Dates {
       this._month = 12;
     }
 
-    if (_sevenDays.length.length === 1) {
+    if (_sevenDays.toString.length.length === 1) {
       _sevenDays = `0${_sevenDays}`;
     }
 

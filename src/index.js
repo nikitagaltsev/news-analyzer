@@ -2,13 +2,14 @@
 
 import './style.css';
 
-import DataStorage from './js/modules/DataStorage';
+
+import DataStorage from './js/modules/DataStorage'
 import NewsCard from './js/components/NewsCard';
 import NewsCardList from './js/components/NewsCardList';
 import SearchInput from './js/components/SearchInput';
 import SearchState from './js/components/SearchState';
 import Dates from './js/components/Dates';
-import newsApi from './js/constants/news-api';
+import newsApi from './js/constants/NEWS_API';
 import createCard from './js/utils/create-card';
 
 
@@ -20,11 +21,11 @@ import createCard from './js/utils/create-card';
   const input = form.querySelector('.search-hub__input');
   const moreButton = document.querySelector('.search-result__show-more');
 
-  const dataStorage = new DataStorage(localStorage);
   const newsCardList = new NewsCardList(newsContainer);
   const searchInput = new SearchInput(doSearch, form, input);
   const dates = new Dates();
 
+  const dataStorage = new DataStorage(localStorage);
   const inProgress = new SearchState(document.querySelector('.in-progress'));
   const noResult = new SearchState(document.querySelector('.no-result'));
   const resultDone = new SearchState(document.querySelector('.search-result'));
@@ -41,7 +42,7 @@ import createCard from './js/utils/create-card';
   }
 
   //инициализация нововстей, если они есть в сторе
-  if (dataStorage.getNews().length > 0) {
+  if (dataStorage.getNews()!== null && dataStorage.getNews().length > 0) {
     createCard(0, 3, dataStorage, NewsCard, cardTemplate, newsCardList);
     resultDone.setActive();
   }
@@ -73,11 +74,13 @@ import createCard from './js/utils/create-card';
   //запуск поиска
    function doSearch() {
     inProgress.setActive();
+    dataStorage.setSearchWord(input.value);
     newsApi.getNews(input.value, dates.oneWeekAgoDate(), dates.currentDate())
     .then(res => {
       if (res.status === 'ok') {
         const articles = JSON.stringify(res.articles);
         dataStorage.setNews(articles);
+        dataStorage.setTotalResults(res.totalResults.toString());
       }
 
       if (res.articles.length == 0) {
@@ -98,14 +101,11 @@ import createCard from './js/utils/create-card';
     .catch(err => {
       inProgress.setInactive();
       noResult.setActive();
+      resultDone.setInactive();
+      document.querySelector('.error-message').textContent = 'Ошибка, попробуйте позже';
       console.log(err)
     })
   }
-
-
-
-
-
 
 })();
 

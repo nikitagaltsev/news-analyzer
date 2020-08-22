@@ -1,6 +1,6 @@
 import GithubApi from '../modules/GithubApi';
 
-const gitHubApi = new GithubApi({
+const GITHUB_API = new GithubApi({
   baseUrl: 'https://api.github.com',
   user: 'nikitagaltsev',
   repoName: 'news-analyzer',
@@ -8,4 +8,4 @@ const gitHubApi = new GithubApi({
 })
 
 
-export default gitHubApi;
+export default GITHUB_API;

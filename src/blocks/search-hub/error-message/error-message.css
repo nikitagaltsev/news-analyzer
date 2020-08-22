@@ -4,6 +4,12 @@
   color: rgba(243, 243, 243, 0.863);
 }
 
+@media (min-width: 600px) {
+  .error-message {
+    top: -30%;
+  }
+}
+
 @media (max-width: 600px) {
   .error-message {
     top: -17%;

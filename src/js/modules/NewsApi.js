@@ -9,7 +9,7 @@ export default class NewsApi {
   }
 
   getNews(searchWord, oneWeekAgoDate, currentDate) {
-    return fetch(`${this.baseUrl}/v2/everything?q=${searchWord}&from=${oneWeekAgoDate}&to=${currentDate}&sortBy=popularity&apiKey=${this.headers.authorization}`, {
+    return fetch(`${this.baseUrl}/v2/everything?q=${searchWord}&to=${currentDate}&from=${oneWeekAgoDate}&apiKey=${this.headers.authorization}`, {
       method: 'GET',
       headers: {
         authorization: this.headers.authorization

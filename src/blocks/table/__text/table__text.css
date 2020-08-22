@@ -1,6 +1,6 @@
 @import url('_date/table__text_date.css');
 
-.table__text {
+.table__text,.table__percentage {
   margin: 0 25px 0 0;
   font-family: Roboto;
   font-style: normal;

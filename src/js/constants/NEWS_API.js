@@ -1,6 +1,6 @@
 import NewsApi from '../modules/NewsApi';
 
-const newsApi = new NewsApi({
+const NEWS_API = new NewsApi({
   baseUrl: ' https://nomoreparties.co/news',
   headers: {
     authorization: '0934753f1d2b453d88b568743d71b5fe',
@@ -8,5 +8,5 @@ const newsApi = new NewsApi({
   }
 })
 
-export default newsApi;
+export default NEWS_API;
 

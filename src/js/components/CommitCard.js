@@ -4,7 +4,6 @@ import convertData from '../utils/convert-data';
 
 export default class CommitCard {
   constructor(template, cardData) {
-    console.log(cardData.html_url)
     this._template = template;
     this._commitLink = cardData.html_url;
     this._date = cardData.commit.committer.date;

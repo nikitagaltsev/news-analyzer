@@ -34,15 +34,15 @@
         </ul>
       </nav>
       <h1 class="question__title">Вы спросили: «Путешествия»</h1>
-      <p class="question__text question__text_weeks">Новостей за неделю: <span class="question__span">32 324</span></p>
-      <p class="question__text question__text_titles">Упоминаний в загаловках: <span class="question__span">235</span></p>
+      <p class="question__text">Новостей за неделю: <span class="question__span question__span_weeks">32 324</span></p>
+      <p class="question__text">Упоминаний в заголовках: <span class="question__span question__span_titles">235</span></p>
     </section>
 
     <section class="table">
       <h2 class="table__title">Аналитика по дням</h2>
       <div class="table__info">
-        <p class="table__text table__text_date">Дата (август)</p>
-        <p class="table__text">Кол-во упоминаний</p>
+        <p class="table__text table__text_date"></p>
+        <p class="table__text">Кол-во упоминаний, %</p>
       </div>
 
       <div class="table__container">
@@ -56,23 +56,15 @@
 
         <div class="table__graph">
           <ul class="table__days">
-            <li class="table__day">19, пн</li>
-            <li class="table__day">20, вт</li>
-            <li class="table__day">21, ср</li>
-            <li class="table__day">22, чт</li>
-            <li class="table__day">23, пт</li>
-            <li class="table__day">24, сб</li>
-            <li class="table__day">25, вс</li>
+            <template id="table__template">
+              <li class="table__day"></li>
+            </template>
           </ul>
 
           <ul class="table__progress-bar">
-            <li class="table__progress table__progress_monday">75</li>
-            <li class="table__progress table__progress_tuesday">75</li>
-            <li class="table__progress table__progress_wednesday">75</li>
-            <li class="table__progress table__progress_thursday">75</li>
-            <li class="table__progress table__progress_friday">75</li>
-            <li class="table__progress table__progress_saturday">75</li>
-            <li class="table__progress table__progress_sunday">75</li>
+            <template id="progress__template">
+              <li class="table__progress"></li>
+            </template>
           </ul>
         </div>
 
