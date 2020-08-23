@@ -1,5 +1,6 @@
 .swiper__slide {
   width: 400px;
+  max-height: 230px;
   margin-top: 5px;
   margin-bottom: 48px;
   height: 288px;

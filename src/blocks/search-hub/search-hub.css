@@ -1,11 +1,19 @@
 @import url('__input/search-hub__input.css');
 @import url('__button/search-hub__button.css');
+@import url('error-message/error-message.css');
 
 .search-hub {
   position: relative;
   font-family: Roboto, Arial, Helvetica, sans-serif;
 }
 
+@media (max-width: 500px) {
+  .search-hub {
+    margin-left: auto;
+    margin-right: auto;
+    width: 288px;
+  }
+}
 
 @media (max-width: 600px) {
   .search-hub {

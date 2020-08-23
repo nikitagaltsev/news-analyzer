@@ -24,6 +24,11 @@
   background: #2A65CC;
 }
 
+.search-hub__button.search-hub__button_inActive {
+  background: gray;
+  cursor: not-allowed;
+}
+
 
 @media (max-width: 600px) {
   .search-hub__button {

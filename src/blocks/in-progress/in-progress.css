@@ -1,0 +1,15 @@
+@import url('__preloader/in-progress__preloader.css');
+@import url('__text/in-progress__text.css');
+
+.in-progress {
+  padding-top: 35px;
+  padding-bottom: 35px;
+  display: none;
+}
+
+
+@media (max-width: 600px) {
+  .in-progress {
+    padding: 40px 0;
+  }
+}

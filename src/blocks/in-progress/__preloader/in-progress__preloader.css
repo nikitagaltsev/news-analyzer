@@ -4,10 +4,10 @@
   }
 }
 
-.preloader {
+.in-progress__preloader {
   width: 74px;
   height: 74px;
   margin: 0 auto 24px;
-  background-image: url('../../images/preloader.png');
+  background-image: url('../../../images/preloader.png');
   animation: spinner .95s infinite linear;
 }
