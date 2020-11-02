@@ -1,5 +1,19 @@
-# news-analyzer
+# News-Analyzer
 Дипломная работа для Яндекс.Практикум
+
+Посмотреть сайт:
+https://nikitagaltsev.github.io/news-analyzer
+
+## Стэк
+
+HTML5, CSS3, JavaScript ES6, ООП, БЭМ, Webpack
+
+## Функционал
+
+* Ищет новости за последнюю неделю по ключевому слову или фразе
+* Формирует статистику по количеству найденных новостей за каждый день в заданном промежутке
+
+## Для локального развертывания
 
 Инструкции по запуску:
 <ul>
@@ -10,5 +24,4 @@
   <li>Разместить production-билд на github pages — <b>npm run deploy</b></li>
 </ul>
 
-Посмотреть сайт:
-https://nikitagaltsev.github.io/news-analyzer
+
